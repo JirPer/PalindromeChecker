@@ -1,4 +1,37 @@
-{
+import java.util.*;
+
+public class Main {
+    public static Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        StringBuffie stringBuffie = new StringBuffie();
+        stringBuffie.chceckRev();
+        ArrayRev arrayRev = new ArrayRev();
+        arrayRev.palindromeCheck();
+    }
+}
+
+class StringBuffie {
+    private String normal;
+    private String reversed;
+    private StringBuffer sb = new StringBuffer();
+    private Scanner scanner = new Scanner(System.in);
+
+    public boolean chceckRev() {
+        System.out.println("Insert characters to compare: ");
+        normal = scanner.nextLine().toLowerCase();
+        sb.append(normal);
+        reversed = sb.reverse().toString();
+        if(normal.equals(reversed)) {
+            System.out.println("Combination of characters is palindrome.");
+            return true;
+        } else {
+            System.out.println("Combination of characters is not palindrome.");
+            return false;
+        }
+    }
+}
+
+class ArrayRev {
 
     private Scanner scanner = new Scanner(System.in);
     private String word;
@@ -23,10 +56,10 @@
             reversie.add(rev);
         }
         if(normie.equals(reversie)) {
-            System.out.println("TRUE!");
+            System.out.println("Combination of characters is palindrome.");
             return true;
         } else {
-            System.out.println("FALSE!");
+            System.out.println("Combination of characters is not palindrome.");
             return false;
         }
     }
