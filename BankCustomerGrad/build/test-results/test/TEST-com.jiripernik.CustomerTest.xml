@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jiripernik.CustomerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-12T17:31:06" hostname="DELPER" time="0.011">
+  <properties/>
+  <testcase name="getTransactions()" classname="com.jiripernik.CustomerTest" time="0.001"/>
+  <testcase name="withdrawalFromCustomer()" classname="com.jiripernik.CustomerTest" time="0.003"/>
+  <testcase name="getName()" classname="com.jiripernik.CustomerTest" time="0.0"/>
+  <testcase name="getAccountBalance()" classname="com.jiripernik.CustomerTest" time="0.001"/>
+  <testcase name="getId()" classname="com.jiripernik.CustomerTest" time="0.001"/>
+  <testcase name="depositToCustomer()" classname="com.jiripernik.CustomerTest" time="0.001"/>
+  <system-out><![CDATA[Amount of 10.0 has been subtracted. Balance is now: 10.0
+Amount of 20.0 has been added. Balance is now: 40.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

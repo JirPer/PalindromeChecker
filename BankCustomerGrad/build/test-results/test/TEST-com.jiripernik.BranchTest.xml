@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jiripernik.BranchTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-12-12T17:31:06" hostname="DELPER" time="0.046">
+  <properties/>
+  <testcase name="removeCustomer()" classname="com.jiripernik.BranchTest" time="0.03"/>
+  <testcase name="addCustomer()" classname="com.jiripernik.BranchTest" time="0.002"/>
+  <testcase name="withdrawalFromCustomer()" classname="com.jiripernik.BranchTest" time="0.003"/>
+  <testcase name="getCustomerTransactions()" classname="com.jiripernik.BranchTest" time="0.002"/>
+  <testcase name="depositToCustomer()" classname="com.jiripernik.BranchTest" time="0.001"/>
+  <testcase name="updateCustomer()" classname="com.jiripernik.BranchTest" time="0.001"/>
+  <system-out><![CDATA[Customer badboy with id: 1 has been added.
+Customer with id: 1 was successfully removed.
+Customer badboy with id: 1 has been added.
+Customer badboy with id: 1 has been added.
+Amount of 10.0 has been subtracted. Balance is now: 10.0
+Customer badboy with id: 1 has been added.
+Customer badboy with id: 1 has been added.
+Amount of 10.0 has been added. Balance is now: 30.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
