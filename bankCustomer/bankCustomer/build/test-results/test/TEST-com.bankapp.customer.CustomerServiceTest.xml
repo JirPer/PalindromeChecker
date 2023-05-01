@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bankapp.customer.CustomerServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-29T15:51:54" hostname="DELPER" time="0.475">
+  <properties/>
+  <testcase name="throwsExceptionWhenIdDoesNotExists()" classname="com.bankapp.customer.CustomerServiceTest" time="0.475"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
