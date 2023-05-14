@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bankapp.account.AccountControllerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-05-13T16:16:31" hostname="DELPER" time="0.429">
+  <properties/>
+  <testcase name="editAccountName()" classname="com.bankapp.account.AccountControllerTest" time="0.208"/>
+  <testcase name="canRetrieveCustomerAccount()" classname="com.bankapp.account.AccountControllerTest" time="0.059"/>
+  <testcase name="canCreateCustomerAccount()" classname="com.bankapp.account.AccountControllerTest" time="0.128"/>
+  <testcase name="deleteAccountById()" classname="com.bankapp.account.AccountControllerTest" time="0.011"/>
+  <testcase name="canGetAllAccounts()" classname="com.bankapp.account.AccountControllerTest" time="0.013"/>
+  <system-out><![CDATA[18:16:28.918 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [AccountControllerTest]: using SpringBootContextLoader
+18:16:28.926 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.bankapp.account.AccountControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:16:28.926 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bankapp.account.AccountControllerTest]: AccountControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:16:28.998 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper -- Using ContextCustomizers for test class [AccountControllerTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+18:16:29.135 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Users\jirip\IdeaProjects\bankCustomer\bankCustomer\build\classes\java\main\com\bankapp\BankCustomerApplication.class]
+18:16:29.137 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bankapp.BankCustomerApplication for test class com.bankapp.account.AccountControllerTest
+18:16:29.162 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper -- Using TestExecutionListeners for test class [AccountControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+18:16:29.164 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [AccountControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-05-13T18:16:29.628+02:00  INFO 25972 --- [    Test worker] c.bankapp.account.AccountControllerTest  : Starting AccountControllerTest using Java 18.0.1 with PID 25972 (started by jirip in C:\Users\jirip\IdeaProjects\bankCustomer\bankCustomer)
+2023-05-13T18:16:29.630+02:00  INFO 25972 --- [    Test worker] c.bankapp.account.AccountControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2023-05-13T18:16:31.514+02:00  INFO 25972 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-13T18:16:31.514+02:00  INFO 25972 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-13T18:16:31.518+02:00  INFO 25972 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-05-13T18:16:31.549+02:00  INFO 25972 --- [    Test worker] c.bankapp.account.AccountControllerTest  : Started AccountControllerTest in 2.321 seconds (process running for 3.898)
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /customers/1/accounts/1
+       Parameters = {accountName=[Jacksies]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"49"]
+             Body = {"id":1,"transfers":[],"account_name":"Jacksies"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.bankapp.account.AccountController
+           Method = com.bankapp.account.AccountController#editAccountName(Integer, Integer, String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /customers/1/accounts
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.bankapp.account.AccountController
+           Method = com.bankapp.account.AccountController#customerAccounts(Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"transfers":[],"account_name":"Jacks"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /customers/1/accounts
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"46"]
+             Body = {"id":1,"transfers":[],"account_name":"Jacks"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.bankapp.account.AccountController
+           Method = com.bankapp.account.AccountController#createCustomerAccount(Integer, Account)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Location:"http://localhost/customers/1/accounts/1"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = http://localhost/customers/1/accounts/1
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /customers/1/accounts/1
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"46"]
+             Body = {"id":1,"transfers":[],"account_name":"Jacks"}
+    Session Attrs = {}
+
+Handler:
+             Type = com.bankapp.account.AccountController
+           Method = com.bankapp.account.AccountController#deleteAccountById(Integer, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /customers/accounts
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.bankapp.account.AccountController
+           Method = com.bankapp.account.AccountController#allAccounts()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"transfers":[],"account_name":"Jacks"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
