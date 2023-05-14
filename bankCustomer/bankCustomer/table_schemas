@@ -1,5 +1,0 @@
-Hibernate: create table account (id integer not null, amount varchar(255), customer_id integer, primary key (id)) engine=InnoDB
-Hibernate: create table account_transfers (account_id integer not null, transfers_id bigint not null) engine=InnoDB
-Hibernate: create table bank_customer (id integer not null, first_name varchar(255), last_name varchar(255), primary key (id)) engine=InnoDB
-Hibernate: create table bank_customer_account (customer_id integer not null, account_id integer not null) engine=InnoDB
-Hibernate: create table transactions (id bigint not null, amount float(53), account_id integer, primary key (id)) engine=InnoDB
