@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.medicaments.Vehicle.VehicleControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-27T19:14:04" hostname="DELPER" time="0.188">
+  <properties/>
+  <testcase name="editVehicle()" classname="com.medicaments.Vehicle.VehicleControllerTest" time="0.188"/>
+  <system-out><![CDATA[21:14:01.335 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [VehicleControllerTest]: using SpringBootContextLoader
+21:14:01.343 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.medicaments.Vehicle.VehicleControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:14:01.344 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.medicaments.Vehicle.VehicleControllerTest]: VehicleControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:14:01.412 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper -- Using ContextCustomizers for test class [VehicleControllerTest]: [DisableAutoConfigurationContextCustomizer, DisableObservabilityContextCustomizer, TypeExcludeFiltersContextCustomizer, PropertyMappingContextCustomizer, Customizer, ImportsContextCustomizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer]
+21:14:01.517 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Users\jirip\IdeaProjects\MedExpirationState\build\classes\java\main\com\medicaments\MedExpirationStateApplication.class]
+21:14:01.518 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.medicaments.MedExpirationStateApplication for test class com.medicaments.Vehicle.VehicleControllerTest
+21:14:01.544 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper -- Using TestExecutionListeners for test class [VehicleControllerTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+21:14:01.546 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [VehicleControllerTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-05-27T21:14:02.024+02:00  INFO 17168 --- [    Test worker] c.m.Vehicle.VehicleControllerTest        : Starting VehicleControllerTest using Java 17.0.6 with PID 17168 (started by jirip in C:\Users\jirip\IdeaProjects\MedExpirationState)
+2023-05-27T21:14:02.026+02:00  INFO 17168 --- [    Test worker] c.m.Vehicle.VehicleControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2023-05-27T21:14:03.949+02:00  INFO 17168 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-05-27T21:14:03.949+02:00  INFO 17168 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-27T21:14:03.954+02:00  INFO 17168 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-05-27T21:14:03.989+02:00  INFO 17168 --- [    Test worker] c.m.Vehicle.VehicleControllerTest        : Started VehicleControllerTest in 2.36 seconds (process running for 3.837)
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /vehicles/128
+       Parameters = {vehicleNumber=[128]}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"49"]
+             Body = {"id":1,"vehicleNumber":128,"placeOfLocation":[]}
+    Session Attrs = {}
+
+Handler:
+             Type = com.medicaments.Vehicle.VehicleController
+           Method = com.medicaments.Vehicle.VehicleController#editVehicle(Integer, Integer)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
